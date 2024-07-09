@@ -34,16 +34,16 @@ on:
 
 jobs:
   build-kernel:
-    name: Build Kernel
+    name: m11q stock Kernel
     runs-on: ubuntu-20.04
     steps:
-      - name: Build
-        uses: Princesahu6789/kernel_build_action@m11q
+      - name: M11q
+        uses: Princesahu6789/kernel_build_action@M11q
         with:
           kernel-url: https://github.com/kushagra055/android_kernel_samsung_m11q
           kernel-branch: main
-          config: cas_defconfig
-          arch: arm32
+          config: m11q_eur_open_defconfig
+          arch: arm64
           aosp-gcc: true
           aosp-clang: true
           python-2.7: true
