@@ -38,12 +38,12 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Build
-        uses: dabao1955/kernel_build_action@main
+        uses: Princesahu6789/kernel_build_action@m11q
         with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-branch: taffy
+          kernel-url: https://github.com/kushagra055/android_kernel_samsung_m11q
+          kernel-branch: main
           config: cas_defconfig
-          arch: arm64
+          arch: arm32
           aosp-gcc: true
           aosp-clang: true
           python-2.7: true
